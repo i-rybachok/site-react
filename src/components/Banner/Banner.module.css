@@ -1,0 +1,28 @@
+.banner-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.banner-content {
+  max-width: 500px;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 2.75em;
+  margin-bottom: 30px;
+}
+
+.banner-text {
+  color: var(--c-black-secondary);
+  font-size: 1.125em;
+  line-height: 1.75em;
+  margin-bottom: 20px;
+}
+
+.banner-img {
+  max-width: fit-content;
+}
