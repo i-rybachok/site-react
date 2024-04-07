@@ -1,5 +1,5 @@
-import Nav from '../Nav/Nav';
-import ButtonHeader from '../Button/ButtonHeader';
+import Navigation from '../Navigation/Navigation';
+import Button from './Button/Button';
 
 // * Styles
 import styles from './Header.module.css';
@@ -10,15 +10,15 @@ import cn from 'classnames';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={cn([styles['header-wrapper'], baseStyles.wrapper])}>
+      <div className={cn([styles['wrapper'], baseStyles.wrapper])}>
         {/* Logo */}
         <a href="#" className={styles.logo}>
           {/* <img src="." alt="" /> */}
         </a>
         {/* Nav */}
-        <Nav />
+        <Navigation />
         {/* Button */}
-        <ButtonHeader />
+        <Button />
       </div>
     </header>
   );

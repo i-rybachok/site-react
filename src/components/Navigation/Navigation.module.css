@@ -1,4 +1,4 @@
-.navigation-list-item-a {
+.link {
   color: var(--c-black);
   /* Use padding instead of gap for better UX (expanding hover field) */
   padding: 10px;
@@ -6,11 +6,11 @@
   transition: all 0.35s ease-in-out;
 }
 
-.navigation-list-item-a:hover {
+.link:hover {
   color: var(--c-primary);
 }
 
-.navigation-list {
+.list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;

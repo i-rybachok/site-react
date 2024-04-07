@@ -6,7 +6,7 @@
   left: 0;
 }
 
-.header-wrapper {
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
