@@ -8,9 +8,14 @@ import Button from '../Button/Button';
 // * Styles
 import styles from './Main.module.css';
 import baseStyles from '../styles/base.module.css';
+import { useState } from 'react';
 
 const Main = () => {
-  const getStarted = () => console.log('Get started');
+  let [number, setNumber] = useState(0); // "useState(0)" is an example of a hook
+
+  const changeNumber = () => {
+    setNumber((prev) => prev + 1);
+  };
 
   return (
     <section className={styles.banner}>
@@ -21,7 +26,12 @@ const Main = () => {
             Tools, tutorials, design and innovation experts, all in one place!
             The most intuitive way to imagine your next user experience.
           </p>
-          <Button text={'Get started'} callback={getStarted} bigMode={true} />
+          <Button
+            text={'Add 1 to a number'}
+            callback={changeNumber}
+            bigMode={true}
+          />
+          <p>{number}</p>
         </div>
         {/* <img src="" alt="" /> */}
       </div>
