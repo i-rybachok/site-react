@@ -21,7 +21,18 @@
   padding: 0;
 }
 
-/* * Body */
+*::selection {
+  background-color: var(--c-primary);
+  color: var(--c-white);
+}
+
+body {
+  font-family: var(--f-base);
+  font-size: var(--fs-base);
+  font-weight: 400;
+  color: var(--c-black);
+  background-color: var(--c-white);
+}
 
 h1,
 h2,

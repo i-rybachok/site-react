@@ -18,3 +18,8 @@
 .logo {
   max-width: 200px;
 }
+
+.buttons {
+  display: flex;
+  gap: 30px;
+}
