@@ -1,10 +1,10 @@
 :root {
   /* Colors */
   --c-primary: #ff9900;
-  --c-black: #2F281E;
+  --c-black: #2f281e;
   --c-black-secondary: #544837;
-  --c-white: #FFFFFF;
-  --c-white-secondary: #BCD0E5;
+  --c-white: #ffffff;
+  --c-white-secondary: #bcd0e5;
   /* Fonts */
   --f-base: 'Montserrat', sans-serif;
   --f-secondary: 'Poppins', sans-serif;
@@ -29,7 +29,6 @@
 body {
   font-family: var(--f-base);
   font-size: var(--fs-base);
-  font-weight: 400;
   color: var(--c-black);
   background-color: var(--c-white);
 }
@@ -48,7 +47,6 @@ input,
 select {
   width: 100%;
 }
-
 
 ul {
   list-style: none;

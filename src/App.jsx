@@ -1,13 +1,17 @@
 // * Components
 import Header from './components/Header/Header';
-import Main from './components/Main/Main';
+import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
+import List from './components/List/List';
 
 const App = () => {
   return (
     <>
       <Header />
-      <Main />
+      <main>
+        <Banner />
+        <List />
+      </main>
       <Footer />
     </>
   );

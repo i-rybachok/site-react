@@ -10,12 +10,12 @@ const Button = ({
   type = 'button',
   whiteMode,
   bigMode,
-  callback,
+  onClick,
 }) => {
   return (
     <button
       type={type}
-      onClick={callback}
+      onClick={onClick}
       className={cn(
         styles.button,
         whiteMode && styles.white,
