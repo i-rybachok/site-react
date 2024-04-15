@@ -21,8 +21,6 @@ const Header = () => {
         <Link to="/" className={styles.logo}>
           <Icon icon="logo" />
         </Link>
-        {/* <a href="#" className={styles.logo}>
-        </a> */}
         <Navigation />
         <div className={styles.buttons}>
           <Button text="Sign In" callback={signIn} whiteMode={true} />
