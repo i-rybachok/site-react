@@ -1,11 +1,15 @@
+// * Base
+import { useCallback } from 'react';
+import { Link } from 'react-router-dom';
+
 // * Components
 import Wrapper from '../Wrapper/Wrapper';
 import Navigation from '../Navigation/Navigation';
 import Button from '../Button/Button';
+import Icon from '../Icon/Icon';
 
 // * Styles
 import styles from './Header.module.css';
-import { useCallback } from 'react';
 
 const Header = () => {
   const signIn = useCallback(() => console.log('You signed in'), []);
@@ -14,9 +18,11 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Wrapper className={[styles.wrapper]}>
-        <a href="#" className={styles.logo}>
-          {/* <img src="." alt="" /> */}
-        </a>
+        <Link to="/" className={styles.logo}>
+          <Icon icon="logo" />
+        </Link>
+        {/* <a href="#" className={styles.logo}>
+        </a> */}
         <Navigation />
         <div className={styles.buttons}>
           <Button text="Sign In" callback={signIn} whiteMode={true} />

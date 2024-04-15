@@ -1,6 +1,9 @@
 // * Data
 import LIST from './Navigation.data';
 
+// * Base
+import { Link } from 'react-router-dom';
+
 // * Styles
 import styles from './Navigation.module.css';
 
@@ -19,9 +22,12 @@ const Navigation = () => {
 const Item = ({ href, text }) => {
   return (
     <li>
-      <a href={href} className={styles.link}>
+      <Link to={href} className={styles.link}>
         {text}
-      </a>
+      </Link>
+      {/* <a href={href} className={styles.link}>
+        {text}
+      </a> */}
     </li>
   );
 };

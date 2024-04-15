@@ -1,8 +1,7 @@
 const LIST = [
-  { id: 1, text: 'Product', href: '#product' },
-  { id: 2, text: 'Customers', href: '#customers' },
-  { id: 3, text: 'Pricing', href: '#pricing' },
-  { id: 4, text: 'Recources', href: '#recources' },
+  { id: 1, text: 'Main', href: '/' },
+  { id: 2, text: 'List', href: '/list' },
+  { id: 3, text: 'Pricing', href: '/pricing' },
 ];
 
 export default LIST;
