@@ -25,6 +25,7 @@ const Item = ({ href, text }) => {
       <Link to={href} className={styles.link}>
         {text}
       </Link>
+      {/* <Link> is better than <a> */}
       {/* <a href={href} className={styles.link}>
         {text}
       </a> */}

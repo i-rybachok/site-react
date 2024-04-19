@@ -1,5 +1,5 @@
 // * Base
-import { useCallback } from 'react';
+import { memo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 
 // * Components
@@ -11,7 +11,7 @@ import Icon from '../Icon/Icon';
 // * Styles
 import styles from './Header.module.css';
 
-const Header = () => {
+const Header = memo(() => {
   const signIn = useCallback(() => console.log('You signed in'), []);
   const signUp = useCallback(() => console.log('You signed up'), []);
 
@@ -19,6 +19,7 @@ const Header = () => {
     <header className={styles.header}>
       <Wrapper className={[styles.wrapper]}>
         <Link to="/" className={styles.logo}>
+          {/* <img src={logoSquare} alt="logo" /> */}
           <Icon icon="logo" />
         </Link>
         <Navigation />
@@ -29,6 +30,6 @@ const Header = () => {
       </Wrapper>
     </header>
   );
-};
+});
 
 export default Header;

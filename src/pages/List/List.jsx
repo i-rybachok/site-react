@@ -1,6 +1,6 @@
 // * Base
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useEffect, useId, useState } from 'react';
 
 // * Components
 import Loading from '../../components/Loading/Loading';
@@ -12,6 +12,7 @@ import styles from './List.module.css';
 
 const List = () => {
   const [state, setState] = useState({ list: [], error: '', loading: true });
+  const commonId = useId(); // Create a unique id
 
   const getList = () => {
     axios
@@ -56,7 +57,7 @@ const List = () => {
     <Wrapper>
       <ul className={styles.list}>
         {state.list.map(({ id, title, body }) => (
-          <Item key={`list-item-${id}`} title={title} body={body} />
+          <Item key={`list-item-${id}-${commonId}`} title={title} body={body} />
         ))}
       </ul>
     </Wrapper>
