@@ -1,7 +1,7 @@
 const FormInput = ({ title, type, name, onChange, onBlur, value }) => {
   return (
     <label>
-      <h2>{title}</h2>
+      <div>{title}</div>
       <input
         type={type}
         name={name}

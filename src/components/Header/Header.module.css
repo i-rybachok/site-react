@@ -17,8 +17,8 @@
 
 .logo {
   max-width: 200px;
-  font-size: 140px;
   color: var(--c-dark-blue);
+  font-size: 100px;
 }
 
 .buttons {
